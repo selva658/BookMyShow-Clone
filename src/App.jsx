@@ -1,4 +1,4 @@
-import { Navbar } from "./components/navbar";
+import { Navbar } from "./navbar/navbar";
 import { Route, Routes } from "react-router-dom"
 import FullScreenDialog from "./payment/payment"
 import SecondSection from "./payment/ordersummary"
