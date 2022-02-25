@@ -1,0 +1,264 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+#snavdiv {
+  background-color: #333545;
+  width: 100%;
+  height: 9vh;
+  /* margin-top: -17px; */
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+#snavdiv #title {
+  margin-left: 8%;
+}
+
+#snavdiv input {
+  height: 4.5vh;
+  width: 30%;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-left: 1%;
+  text-align: center;
+  border: 1px solid white;
+}
+textarea:focus,
+input:focus,
+select:focus {
+  outline: none;
+}
+
+#snavdiv #select {
+  background-color: #333545;
+  border: none;
+  color: white;
+  margin-left: 30%;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+#signin {
+  height: 3.5vh;
+  width: 5%;
+  background-color: #f84464;
+  color: white;
+  border: 1px solid #f84464;
+  border-radius: 5px;
+  margin-top: 1em;
+  margin-left: 1%;
+  padding: 0;
+  cursor: pointer;
+}
+
+#snavdiv #icon {
+  margin-left: 1.5%;
+  margin-top: 1em;
+  cursor: pointer;
+}
+button {
+  background-color: #333545;
+  border: none;
+  color: white;
+}
+
+.body {
+  width: 300%;
+  border-radius: 5px;
+  height: 15vh;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+.body img {
+  margin-top: 1.5em;
+  width: 4.5%;
+  height: 8vh;
+  margin-left: 1%;
+}
+.body1 {
+  width: 165%;
+  color: #f84464;
+  background-color: white;
+}
+.body img:hover {
+  border: 2px solid #f84464;
+  border-radius: 5px;
+}
+.body1 button {
+  text-align: center;
+  border-radius: 5px;
+  background-color: #f84464;
+}
+
+.scity {
+  width: 165%;
+  justify-content: center;
+  color: #f84464;
+  background-color: white;
+}
+
+/* ------------------------------------------------ */
+.snav2 {
+  display: flex;
+  flex-direction: row;
+  background-color: #1f2533;
+  color: white;
+  padding-top: 0.7em;
+}
+.Link {
+  text-decoration: none;
+  color: white;
+}
+.Link:hover {
+  color: white;
+}
+
+.snav2 :nth-child(1) {
+  margin-left: 8%;
+}
+
+.snav2 p {
+  margin-left: 1%;
+}
+
+.snav2 :nth-child(8) {
+  margin-left: 30.5%;
+}
+
+/* ----------------------------------------------- */
+.slogin {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 6vh;
+  width: 40%;
+  margin-bottom: 20px;
+  background-color: white;
+  color: black;
+}
+.bodylogin {
+  text-align: center;
+  border-radius: 5px;
+  width: 165%;
+  background-color: white;
+}
+.bodylogin p {
+  color: #f84464;
+}
+.bodylogin button:hover {
+  border: 1px solid #f84464;
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+  #snavdiv #title {
+    margin-left: 5%;
+  }
+  #snavdiv {
+    width: 100%;
+  }
+
+  #snavdiv input {
+    width: 40%;
+  }
+
+  #snavdiv #signin {
+    width: 8%;
+    padding: 0;
+  }
+
+  #snavdiv #select {
+    margin-left: 13%;
+  }
+
+  .snav2 :nth-child(1) {
+    margin-left: 5%;
+  }
+  .hidden {
+    visibility: hidden;
+    display: block;
+  }
+  .body1,
+  .scity {
+    width: 100%;
+  }
+  .body {
+    width: 100%;
+    
+  }
+  .body img {
+    width: 9%;
+    margin-top: 0.5em;
+  }
+  .bodylogin {
+    width: 100%;
+  }
+  .slogin {
+    width: 50%;
+  }
+  #icon{
+    visibility: hidden;
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #snavdiv #title {
+    visibility: hidden;
+    display: none;
+  }
+
+  #snavdiv input {
+    margin-left: 2%;
+    width: 40%;
+  }
+  #snavdiv #select {
+    margin-left: 20%;
+  }
+  #snavdiv #signin {
+    width: 10%;
+  }
+  #icon{
+    visibility: hidden;
+    display: none;
+  }
+  .body1,
+  .scity {
+    width: 100%;
+  }
+  .body {
+    width: 100%;
+  }
+  .body img {
+    width: 9%;
+    margin-top: 0.5em;
+  }
+  .snav2 {
+    justify-content: space-evenly;
+  }
+  .snav2 :nth-child(1) {
+    margin-left: 0%;
+  }
+  .hidden {
+    visibility: hidden;
+    display: none;
+  }
+  .bodylogin {
+    width: 100%;
+  }
+  .slogin {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .hidden {
+    visibility: hidden;
+    display: none;
+  }
+}

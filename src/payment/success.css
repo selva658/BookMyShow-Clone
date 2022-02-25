@@ -1,0 +1,44 @@
+#spayment{
+    background: #f84464;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 500;
+    padding: 13px 40px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    border: none;
+    outline: none;
+    width: 50%;
+}
+.success{
+
+width: 50%;
+height: 25vh;
+margin: auto;
+}
+.success img{
+    border-radius: 5px;
+    height: 30vh;
+    color: #f84464;
+}
+.slogin{
+    color: #f84464;
+    border: 1px solid #f84464;
+}
+@media only screen and (max-width:700px)
+{
+    #spayment{
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-width:700px) and (max-width:1200px)
+{
+    #spayment{
+        width: 100%;
+    }
+    
+}
