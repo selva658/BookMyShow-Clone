@@ -1,0 +1,80 @@
+.sdiv1 .simgdiv{
+   display: inline-block;
+   height: 40vh;
+   border-radius: 5px;
+   margin-left: 3%;
+   width: 17%;
+}
+
+.sdiv1 .simgdiv img{
+    height: 40vh;
+    width: 100%;
+    border-radius: 5px;
+}
+.sdiv1{
+    margin: 2em 10%;
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+.link h5{
+    color: #302821;
+    margin-top: 1em;
+}
+.link p{
+    color: #464541;
+}
+.stitle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.stitle p{
+    color:  #e06462;
+}
+.sbanner{
+    width: 97%;
+    margin: 4em;
+    margin-left: 3%;
+}
+.stitle h3{
+    margin-left: 3%;
+    font-weight: bolder;
+}
+
+@media only screen and (max-width:700px)
+{
+    .sdiv1 .simgdiv{
+       display: block;
+       width: 80%;
+       margin-bottom: 2%;
+    }
+    .sdiv1 .simgdiv img{
+        height: 30vh;
+    }
+    .stitle h3{
+        margin-left: 0;
+    }
+    .stitle{
+        justify-content: space-evenly;
+        margin-left: -10%;
+        padding: 10px;
+    }
+
+}
+
+@media only screen and (min-width:700px) and (max-width:1200px)
+{
+    .sdiv1 .simgdiv{
+        display: block;
+        width: 80%;
+        margin-bottom: 2%;
+     }
+     .sdiv1 .simgdiv img{
+         height: 30vh;
+     }
+ 
+}
+
+

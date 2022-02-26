@@ -3,7 +3,7 @@ import "./Seating.css";
 import { rows, rows2 } from "./data";
 import { Navigate, Link, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux"
-import {addtotal} from "../redux/action"
+import {addtotal} from "../redux/total/action"
 
 const Silver = ["A", "B", "C", "D"];
 const ticketList = {
@@ -73,7 +73,7 @@ const Seating = ({
 //       <Navigate to="/payment"></Navigate>
 //   };
   
-  const stotal = useSelector((store) => store.total)
+  const stotal = useSelector((store) => store.total.total)
   const dispatch=useDispatch()
   console.log(stotal);
   return (

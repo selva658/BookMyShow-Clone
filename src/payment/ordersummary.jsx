@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./ordersummary.css";
 import axios from "axios";
-import { addtotal } from "../redux/action";
+import { addtotal } from "../redux/total/action";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import cors from"core-js"
+
 
 const SecondSection = () => {
   const city = "Chennai";
@@ -14,7 +14,7 @@ const SecondSection = () => {
     axios.get("https://shielded-basin-22580.herokuapp.com").then((res) => setfood(res.data));
   }, []);
   let [total, settotal] = React.useState(0);
-  const stotal = useSelector((store) => store.total);
+  const stotal = useSelector((store) => store.total.total);
   const dispatch = useDispatch();
   console.log(stotal);
   return (

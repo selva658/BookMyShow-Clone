@@ -1,6 +1,6 @@
 import React from "react";
 import "./payment.css";
-import { addtotal } from "../redux/action";
+import { addtotal } from "../redux/total/action";
 import { useSelector, useDispatch } from "react-redux";
 import Login from "./success";
 import "./success.css"
@@ -17,7 +17,7 @@ var mm = String(todays.getMonth() + 1).padStart(2, '0'); //January is 0!
   todays=mm + '/' + dd + '/' + yyyy
 
   const handleChange = () => {};
-  const stotal = useSelector((store) => store.total);
+  const stotal = useSelector((store) => store.total.total);
   return (
     <div>
       <div className="left">
