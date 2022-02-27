@@ -41,5 +41,8 @@
   "main": "vite.config.js",
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",  
+  "engines": {
+    "node": "16.13.1"
+  }
 }
